@@ -1,0 +1,181 @@
+ext {
+
+    version_code = 1
+    version_name = "0.0.1"
+
+    kotlin_version = '1.3.41'
+
+    androidMinSdkVersion = 24
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+
+    androidx_version = '1.0.2'
+    androidx_test_runner_version = '1.2.0'
+    androidx_test_rules_version = '1.2.0'
+    androidx_junit_ext_version = '1.1.1'
+
+    constraint_layout_version = '1.1.3'
+
+    rxjava_version = '2.2.9'
+    rxandroid_version = '2.1.1'
+    rxkotlin_version = '2.3.0'
+
+    dagger_version = '2.23.1'
+    retrofit_version = '2.6.0'
+    http_logger_version = '3.14.2'
+    timber_version = '4.7.1'
+    rxbinding_version = '2.2.0'
+
+    rib_version = '0.9.1'
+    room_version = '2.1.0'
+    work_manager_version = '2.0.1'
+
+    junit_version = '4.12'
+    espresso_version = '3.2.0'
+    mockito_version = '2.28.2'
+
+    hamcrest_version = '1.3'
+    truth_version = '0.45'
+
+    androidx_test_core_version = '1.2.0'
+    androidx_test_ext_kotlin_runner_version = '1.1.1'
+    androidx_test_rules_version = '1.2.0'
+
+    firebase_version = '17.0.0'
+    crashlytics_version = '2.10.1'
+    firebase_auth_version = '18.0.0'
+    google_auth_version = '17.0.0'
+    facebook_auth_version = '5.4.0'
+
+    material_version = '1.0.0'
+    recycler_view_version = '1.0.0'
+    paging_version = '2.1.0'
+
+    glide_version = '4.9.0'
+
+    blurry_version = '3.0.0'
+
+    androidLibs = [
+            // AndroidX maps the original support library API packages into the androidx namespace
+            androidx_appcompat      : "androidx.appcompat:appcompat:$androidx_version",
+
+            // KTX extensions provide concise, idiomatic Kotlin to Jetpack and Android platform APIs
+            androidx_core_ktx       : "androidx.core:core-ktx:$androidx_version",
+
+            // A ConstraintLayout is a android.view.ViewGroup which allows you to position and size widgets in a flexible way
+            constraint_layout       : "androidx.constraintlayout:constraintlayout:$constraint_layout_version",
+
+            // This is a logger with a small, extensible API which provides utility on top of Android's normal Log class
+            timber                  : "com.jakewharton.timber:timber:$retrofit_version",
+
+            // RxJava binding APIs for Android UI widgets from the platform and support libraries
+            rxbinding               : "com.jakewharton.rxbinding2:rxbinding:$rxbinding_version",
+
+            // Dependency injection framework
+            dagger_android          : "com.google.dagger:dagger-android:$dagger_version",
+            dagger_androidx         : "com.google.dagger:dagger-android-support:$dagger_version",
+            dagger_android_processor: "com.google.dagger:dagger-android-processor:$dagger_version",
+
+            // RIBs is the cross-platform architecture framework behind many mobile apps at Uber.
+            ribs                    : "com.uber.rib:rib-android:$rib_version",
+            rib_screen_stack_base   : "com.uber.rib:rib-screen-stack-base:$rib_version",
+
+            // ORM for SQLite
+            room                    : "androidx.room:room-runtime:$room_version",
+
+            // Helper class to add RxJava2 support to Room.
+            room_rxjava2            : "androidx.room:room-rxjava2:$room_version",
+
+            // Compiler for Room Database
+            room_compiler           : "androidx.room:room-compiler:$room_version",
+
+            // Android specific bindings for RxJava 2
+            rxandroid               : "io.reactivex.rxjava2:rxandroid:$rxandroid_version",
+
+            // Firebase core library for access to fiebase services
+            firebase_core           : "com.google.firebase:firebase-core:$firebase_version",
+
+            // Crash reporting system
+            crashlytics             : "com.crashlytics.sdk.android:crashlytics:$crashlytics_version",
+
+            // Auth service
+            firebase_auth           : "com.google.firebase:firebase-auth:$firebase_auth_version",
+            google_auth             : "com.google.android.gms:play-services-auth:$google_auth_version",
+            facebook_auth           : "com.facebook.android:facebook-login:$facebook_auth_version",
+
+            // Logger for network call`s
+            http_logger             : "com.squareup.okhttp3:logging-interceptor:$http_logger_version",
+
+            //Material ui components
+            material                : "com.google.android.material:material:$material_version",
+
+            // RecyclerView
+            recycler_view           : "androidx.recyclerview:recyclerview:$recycler_view_version",
+
+            paging                  : "androidx.paging:paging-runtime:$paging_version",
+            paging_rx               : "androidx.paging:paging-rxjava2:$paging_version",
+
+            // Image loader
+            glide                   : "com.github.bumptech.glide:glide:$glide_version",
+            // Annotation processor for glide
+            glide_processor         : "com.github.bumptech.glide:compiler:$glide_version",
+            glide_okhttp_integration: "com.github.bumptech.glide:okhttp3-integration:$glide_version",
+            //Blur library
+            blurry                  : "jp.wasabeef:blurry:$blurry_version",
+    ]
+
+    libs = [
+            // Provides living essentials for work with Kotlin
+            kotlin_std_lib     : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+
+            // A library for composing asynchronous and event-based programs by using observable sequences
+            rxjava             : "io.reactivex.rxjava2:rxjava:$rxjava_version",
+            rxkotlin           : "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version",
+
+            // Dependency injection framework
+            dagger             : "com.google.dagger:dagger:$dagger_version",
+            dagger_compiler    : "com.google.dagger:dagger-compiler:$dagger_version",
+
+            // Type-safe HTTP client for Android and Java/Kotlin
+            retrofit           : "com.squareup.retrofit2:retrofit:$retrofit_version",
+
+            // Deserializer/serializer for entities
+            converter_factory  : "com.squareup.retrofit2:converter-moshi:$retrofit_version",
+
+            // An Adapter for adapting RxJava types for Retrofit
+            retrofit_rx_adapter: "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+    ]
+
+    testLibs = [
+            // Unit tests framework
+            junit               : "junit:junit:$junit_version",
+
+            // Hamcrest
+            hamcrest            : "org.hamcrest:hamcrest-all:$hamcrest_version",
+
+            // Espresso
+            espresso_core       : "androidx.test.espresso:espresso-core:$espresso_version",
+            espresso_contrib    : "androidx.test.espresso:espresso-contrib:$espresso_version",
+
+            // Thuth
+            thuth               : "com.google.truth:truth:$truth_version",
+
+            // Helper for room persistence storage tests
+            room                : "androidx.room:room-testing:$room_version",
+
+            // Mockito framework
+            mockito             : "org.mockito:mockito-core:$mockito_version",
+            mockito_android     : "org.mockito:mockito-android:$mockito_version",
+            mockito_inline      : "org.mockito:mockito-inline:$mockito_version",
+
+            // RIB`s
+            ribs                : "com.uber.rib:rib-test-utils:$rib_version",
+            ribs_compiler       : "com.uber.rib:rib-compiler-test:$rib_version",
+
+            // AndroidX Test - Instrumented testing
+            core_ktx            : "androidx.test:core-ktx:$androidx_test_core_version",
+            junit_ktx           : "androidx.test.ext:junit-ktx:$androidx_test_ext_kotlin_runner_version",
+            androidx_test_runner: "androidx.test:runner:$androidx_test_runner_version",
+            test_rules          : "androidx.test:rules:$androidx_test_rules_version",
+    ]
+}
