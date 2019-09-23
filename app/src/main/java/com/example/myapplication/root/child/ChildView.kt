@@ -15,6 +15,7 @@ class ChildView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyle: Int = 0
 ) : FrameLayout(context, attrs, defStyle), ChildInteractor.ChildPresenter {
+    // defer is important here!
     override fun getCurrentText(): Single<String> =
         Single.defer { Single.just(vChildEditText.text.toString()) }
 }

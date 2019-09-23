@@ -1,6 +1,5 @@
 package com.example.myapplication.root
 
-import android.view.View
 import com.example.myapplication.root.child.ChildBuilder
 
 import com.uber.rib.core.ViewRouter

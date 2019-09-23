@@ -7,7 +7,6 @@ import com.uber.rib.core.RibInteractor
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Function
 import javax.inject.Inject
 
 /**
